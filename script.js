@@ -74,12 +74,6 @@ function Disk(pole, weight)
         c.fillRect(this.x + 1, this.y, this.width - 1, -this.height); // adding and subtracting 1 so the disks on the same level don't look overlapping
     }
 }
-// rectLen = 100;
-// rectHeight = 20;
-// c.fillStyle = 'rgba(0,0,255, 0.5)'
-// c.fillRect(400 - rectLen, 400, 2 * rectLen, -rectHeight )
-// rectLen /= 1.2
-// c.fillRect(400 - rectLen, 400 - rectHeight-2, 2 * rectLen, -rectHeight )
 function animate()
 {
     requestAnimationFrame(animate);
@@ -97,8 +91,7 @@ function animate()
 var source = pole1;
 var aux = pole2;
 var destination = pole3;
-// var noOfDisk = 3;
-var n = prompt('ENter the number of disks');
+var n = prompt('Enter the number of disks');
 weight = n - 1;
 var disks = []
 for(var i = 0; i < n; i++)
